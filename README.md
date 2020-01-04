@@ -16,6 +16,10 @@ Usage: `wifi-qr -s <SSID> -p <Password> > qr.png`
 import "github.com/witchard/wifi-qr/encode
 
 ...
-	png_bytes := encode.Encode("ssid", "password")
+	png_bytes := encode.EncodeWpa("ssid", "password")
 ...
 ```
+
+## Wasm
+
+In the `wasm` folder you will find a simple web browser example using wasm. Go into that folder and run `make serve` to see it in action.
